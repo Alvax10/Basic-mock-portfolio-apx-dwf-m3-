@@ -1,0 +1,414 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 0;
+    background-image: url("./images/puntitos.png");
+}
+.general-conteiner {
+    margin: 0;
+}
+.header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 18px 20px 0px 17px;
+    justify-content: space-between;
+}
+.icon {
+    width: 60px;
+    height: 60px;
+}
+@media (min-width: 1024px) {
+    .icon {
+        width: 100px;
+        height: 90px;
+    }
+}
+.menu {
+    gap: 7px;
+    width: 36px;
+    height: 6px;
+    padding: 7px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+@media (min-width: 1024px) {
+    .menu {
+        display: none;
+    }
+}
+.tabs {
+    display: none;
+}
+@media (min-width: 1024px) {
+    .tabs {
+        gap: 20px;
+        display: grid;
+        font-size: 24px;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        grid-template-columns: auto auto auto;
+    }
+}
+.rectangle {
+    width: 36px;
+    height: 6px;
+    background-color: #141414;
+}
+.bottom-header {
+    gap: 58px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: auto auto;
+}
+@media (min-width: 1024px) {
+    .bottom-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .title {
+        margin: 50px 0px 0px 0px;
+    }
+    .me {
+        margin-left: auto;
+    }
+}
+.title {
+    width: 291px;
+    height: 96px;
+    padding: 0 42px;
+    font-size: 48px;
+    font-family: "Open Sans", sans-serif;
+}
+.me {
+    width: 318px;
+    height: 300px;
+    padding: 0px 26px 0 31px;
+}
+.body {
+    background-color: #141414;
+}
+.my-information {
+    width: auto;
+    display: flex;
+    padding: 0 0 68px 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (min-width: 1024px) {
+    .my-information {   
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        padding: 100px 200px 100px 200px;
+    }
+    .info {
+        padding: 0px 0px 0px 50px;
+    }
+    .about-me {
+        margin: 0px 0px;
+    }
+}
+.my-name {
+    width: 271px;
+    height: 44px;
+    font-size: 32px;
+    color: #FAFAFA;
+    padding: 55px 52px 41px 52px;
+    font-family: "Open Sans", sans-serif;
+}
+.about-me {
+    width: 312px;
+    height: 90px;
+    font-size: 16px;
+    color: #FAFAFA;
+    padding: 0px 32px 57px 31px;
+    font-family: 'Roboto', sans-serif;
+}
+.tick {
+    width: 80px;
+    height: 80px;
+}
+.my-services {
+    width: auto;
+    display: grid;
+    height: 1375px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAFA;
+    grid-template-columns: 271px;
+}
+@media (min-width: 1024px) {
+    .my-services {
+        width: auto;
+        display: grid;
+        height: 604px;
+        gap: 0px 100px;
+        padding-top: 60px;
+        justify-content: center;
+        box-sizing: border-box;
+        grid-template-rows: 84px;
+        grid-template-columns: 271px 271px 271px;
+    }
+    .my-services-frase {
+        grid-column-start: 2;
+        grid-column-end: 3 ;
+    }
+    .first-service {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-column-end: 2;
+    }
+    .what-i-do-first {
+        margin: 0px;
+        width: 262px;
+        height: 115px;
+        text-align: center;
+    }
+    .second-service {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-column-end: 3;
+    }
+    .what-i-do-second {
+        margin: 0px;
+        width: 262px;
+        height: 115px;
+        text-align: center;
+    }
+    .third-service {
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+    .what-i-do-last {
+        margin: 0px;
+        width: 262px;
+        height: 115px;
+        text-align: center;
+    }
+}
+.my-services-frase {
+    width: 271px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.compu {
+    padding: 0px 70px;
+}
+.i-do {
+    display: flex;
+    padding: 19px 0px 15px 0px;
+    justify-content: center;
+}
+.contact-zone {
+    gap: 20px;
+    width: auto;
+    height: 660px;
+    display: grid;
+    padding: 70px 0px;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: #141414;
+    grid-template-columns: 335px;
+    grid-template-rows: 56px 60px 60px 150px 45px;
+}
+@media (min-width: 1024px) {
+    .contact-zone {
+        width: auto;
+        height: auto;
+        display: grid;
+        gap: 27px 77px;
+        padding: 116px 163px;
+        grid-template-rows: 70px 70px 139px 48px;
+        grid-template-columns: 271px 335px;
+    }
+    .write-me {
+        display: flex;
+        font-size: 32px;
+        color: #FAFAFA;
+        align-items: center;
+        justify-content: flex-end;
+        font-family: "Open Sans", sans-serif;
+    }
+    .input-name-zone {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-column-end: 3;
+    }
+    .input-mail-zone {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .input-message-zone {
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    .sent {
+        grid-column-start: 2;
+        grid-row-start: 4;
+        grid-column-end: 3;
+    }
+}
+.write-me {
+    display: flex;
+    font-size: 32px;
+    color: #FAFAFA;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+.name {
+    display: flex;
+    font-size: 13px;
+    color: #FAFAFA;
+    align-items: center;
+    font-family: "Roboto";
+    padding: 0px 301px 9px 0px;
+}
+.input-name {
+    width: 328px;
+    height: 25px;
+}
+.mail {
+    display: flex;
+    font-size: 13px;
+    color: #FAFAFA;
+    align-items: center;
+    font-family: "Roboto";
+    padding: 0px 301px 9px 0px;
+}
+.input-mail {
+    width: 328px;
+    height: 25px;
+}
+.message {
+    display: flex;
+    font-size: 13px;
+    color: #FAFAFA;
+    align-items: center;
+    font-family: "Roboto";
+    padding: 0px 301px 9px 0px;
+}
+.textarea {
+    width: 330px;
+    height: 113px;
+}
+.sent {
+    width: 335px;
+    height: 45px;
+    border-radius: 4px;
+    background-color: #FFD953;
+}
+.footer {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/puntitos.png");
+}
+@media (min-width: 1024px) {
+    .footer {
+        width: auto;
+        height: 346px;
+        display: grid;
+        padding: 100px;
+        align-items: center;
+        box-sizing: border-box;
+        grid-auto-columns: 270px;
+        grid-template-rows: 80px 30px 30px;
+    }
+    .second-icon {
+        width: 150px;
+        padding: 0px;
+        height: 120px;
+    }
+    .copyright {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        padding: 0px 0px 0px 35px;
+    }
+}
+.second-icon {
+    width: 70px;
+    height: 70px;
+    padding: 40px 0px 0px 20px;
+}
+.copyright {
+    width: 83px;
+    height: 15px;
+    font-size: 13px;
+    font-family: "Roboto";
+    padding: 0px 0px 0px 20px;
+}
+.instagram-div {
+    width: auto;
+    height: auto;
+    display: flex;
+    padding: 70px 248px 33px 10px;
+}
+@media (min-width: 1024px) {
+    .instagram-div {
+        grid-row-start: 1;
+        grid-column-start: 3;
+        justify-content: flex-start;
+    }
+}
+.instagram {
+    width: 27px;
+    height: 27px;
+    padding: 0px 8px;
+}
+.insta {
+    font-size: 16px;
+    color: #2C2C2C;
+    font-family: "Roboto";
+}
+.linkedin-div {
+    display: flex;
+    padding: 0px 248px 0px 10px;
+}
+@media (min-width: 1024px) {
+    .linkedin-div {
+        grid-row-start: 2;
+        grid-column-start: 3;
+        padding: 5px 24px 10px 10px;
+    }
+}
+.linkedin {
+    width: 27px;
+    height: 27px;
+    padding: 0px 8px;
+}
+.link {
+    font-size: 16px;
+    color: #2C2C2C;
+    font-family: "Roboto";
+}
+@media (min-width: 1024px) {
+    .github-div {
+        grid-row-start: 3;
+        grid-column-start: 3;
+        padding: 0px 0px 0px 10px;
+    }
+}
+.github-div {
+    display: flex;
+    padding: 30px 0px 20px 10px;
+}
+.github {
+    width: 27px;
+    height: 27px;
+    padding: 0px 8px;
+}
+.git {
+    font-size: 16px;
+    color: #2C2C2C;
+    font-family: "Roboto";
+}
