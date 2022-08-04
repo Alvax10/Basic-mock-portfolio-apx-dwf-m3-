@@ -1,4 +1,4 @@
-# desafio-m3
+# apx-challenge-m3
 url: https://alvax10.github.io/desafio-m3/
 
 ### About it
